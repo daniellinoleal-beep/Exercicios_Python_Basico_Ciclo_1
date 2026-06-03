@@ -13,5 +13,13 @@
 # Digite a senha: AC12
 # Senha correta
 
-# ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+# ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO ------------------------------------------------------senha_correta = "1234"
 
+senha_correta = float(input("123"))
+
+senha = float(input("digite a senha: "))
+
+if senha == senha_correta:
+    print("senha_correta")
+else:
+    print("senha_incorreta")

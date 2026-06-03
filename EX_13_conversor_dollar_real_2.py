@@ -25,3 +25,23 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+print("===conversor de moedas===")
+print("1- converter de dolar para real")
+print("2- converter de real para dolar")
+
+opcao = float(input("escolha uma opcao: "))
+
+cotacao = float(input("digite uma cotacao: "))
+
+if opcao == 1:
+    dolares = float(input("digite o valor em dolares"))
+    reais = dolares * cotacao
+    print("valor convertido em real: R$", reais)
+
+elif opcao == 2:
+    reais = float(input("digite o valor em reais"))
+    dolares = reais * cotacao
+    print("valor convertido em dolares: US$", dolares)
+    
+else:
+    print("opcao invalida")

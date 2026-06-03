@@ -14,3 +14,7 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+idade = float(input("Digite uma idade :"))
+
+
+print(idade>=18)

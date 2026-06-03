@@ -9,5 +9,9 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+cotacao = float(input("Digite a cotação atual do dólar: "))
+dolares = float(input("Digite a quantidade de dólares: "))
 
+reais = cotacao * dolares
 
+print("Valor em reais: R$", reais)

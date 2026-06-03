@@ -37,3 +37,34 @@
 # Você andou 100.0km por 10 dias, então o preço a pagar é R$615.00.
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+
+tabela_precos = {
+    "gol": 80,
+    "hb20": 100,
+    "corolla": 180,
+    "civic": 200
+}
+
+
+valor_padrao = 120
+
+modelo = input("Digite o modelo do carro alugado: ").lower()
+dias = int(input("Digite a quantidade de dias alugados: "))
+km = float(input("Digite a quantidade de quilômetros percorridos: "))
+
+if modelo in tabela_precos:
+    valor_dia = tabela_precos[modelo]
+else:
+    print("Modelo não encontrado. Será aplicado o valor padrão.")
+    valor_dia = valor_padrao
+
+custo_dias = dias * valor_dia
+custo_km = km * 0.15
+valor_total = custo_dias + custo_km
+
+print("\n===== RESUMO DO ALUGUEL =====")
+print(f"Modelo do carro: {modelo}")
+print(f"Valor da diária: R$ {valor_dia:.2f}")
+print(f"Custo pelos dias alugados: R$ {custo_dias:.2f}")
+print(f"Custo pelos quilômetros rodados: R$ {custo_km:.2f}")
+print(f"Valor total a pagar: R$ {valor_total:.2f}")

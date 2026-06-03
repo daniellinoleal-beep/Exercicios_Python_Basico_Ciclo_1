@@ -17,3 +17,9 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+nota1 = float(input("Digite uma nota: "))
+nota2 = float(input("Digite uma segunda nota: "))
+
+media = (nota1 + nota2) /2
+
+print("aluna aprovada", media >=7)

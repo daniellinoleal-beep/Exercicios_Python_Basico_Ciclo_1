@@ -10,3 +10,12 @@
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
 
+km = float(input("Digite quantos km um carro percorreu: "))
+dias = float(input("Digite quantos dias o carro foi alugado: "))
+
+valor_dias = dias * 60
+valor_km = km * 0.15
+
+total = valor_dias + valor_km
+
+print(f"Valor a pagar: R$ {total:.2f}")
